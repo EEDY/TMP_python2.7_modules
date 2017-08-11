@@ -1,0 +1,186 @@
+2017-08-11 09:23:44,766 - PID:27351 - tpcds-test.py[line:166] - __main__ - INFO - Start running streams for: query/subset_parallel/01_streams/
+2017-08-11 09:23:44,770 - PID:27351 - tpcds-test.py[line:175] - __main__ - INFO - Start a new Query Stream: query_subset_parallel_00.sql
+2017-08-11 09:23:44,771 - PID:27351 - tpcds-test.py[line:338] - __main__ - INFO - load query from file query/subset_parallel/01_streams/query_subset_parallel_00.sql
+2017-08-11 09:23:44,799 - PID:27370 - tpcds-test.py[line:620] - __main__ - INFO - [Stream 00] Starting Stream....
+2017-08-11 09:23:44,800 - PID:27370 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 00] Setup odbc connection
+2017-08-11 09:23:44,800 - PID:27370 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf3
+Connect using DSN=traf3;UID=sentry_user1;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t1;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-11 09:23:46,293 - PID:27370 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 00] 25 queries in Query list: 39,39,80,19,58,33,10,63,98,67,81,92,22,6,52,42,41,8,12,30,84,55,53,83,61
+2017-08-11 09:23:46,293 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 39, Doing 1/25 queries
+2017-08-11 09:23:57,051 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 39
+2017-08-11 09:23:59,049 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 39
+2017-08-11 09:27:06,678 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 39, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 09:27:06]
+2017-08-11 09:27:06,838 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 39, Start Time: 2017-08-11 09:23:59.050201, End Time: 2017-08-11 09:27:06.678415, Duration: 0:03:07.628214, sec: 187, Compile Time: 9 State: FAIL, ReturnRows: 31
+2017-08-11 09:27:06,839 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 39, Doing 2/25 queries
+2017-08-11 09:27:09,193 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 39
+2017-08-11 09:27:11,151 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 39
+2017-08-11 09:30:17,942 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 39, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 09:30:17]
+2017-08-11 09:30:18,133 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 39, Start Time: 2017-08-11 09:27:11.152098, End Time: 2017-08-11 09:30:17.942435, Duration: 0:03:06.790337, sec: 186, Compile Time: 1 State: FAIL, ReturnRows: 31
+2017-08-11 09:30:18,134 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 80, Doing 3/25 queries
+2017-08-11 09:47:23,900 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 80
+2017-08-11 09:55:07,476 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 80
+2017-08-11 10:29:22,920 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 80, [01000] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** WARNING[6008] Statistics for column (SS_ITEM_SK) from table HIVE.TPCDS_SF1K_T1.STORE_SALES were not available. As a result, the access path chosen might not be the best possible. [2017-08-11 10:29:22]
+2017-08-11 10:29:23,097 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 80, Start Time: 2017-08-11 09:55:07.476644, End Time: 2017-08-11 10:29:22.920631, Duration: 0:34:15.443987, sec: 2055, Compile Time: 565 State: FAIL, ReturnRows: 73
+2017-08-11 10:29:23,098 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 19, Doing 4/25 queries
+2017-08-11 10:29:31,359 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 19
+2017-08-11 10:29:35,266 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 19
+2017-08-11 10:32:36,275 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 19, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 10:32:36]
+2017-08-11 10:32:36,428 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 19, Start Time: 2017-08-11 10:29:35.266691, End Time: 2017-08-11 10:32:36.275723, Duration: 0:03:01.009032, sec: 181, Compile Time: 6 State: FAIL, ReturnRows: 27
+2017-08-11 10:32:36,428 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 58, Doing 5/25 queries
+2017-08-11 10:32:45,482 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 58
+2017-08-11 10:32:50,739 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 58
+2017-08-11 10:35:58,625 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 58, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 10:35:58]
+2017-08-11 10:35:58,779 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 58, Start Time: 2017-08-11 10:32:50.739706, End Time: 2017-08-11 10:35:58.625730, Duration: 0:03:07.886024, sec: 187, Compile Time: 5 State: FAIL, ReturnRows: 66
+2017-08-11 10:35:58,780 - PID:27370 - tpcds-test.py[line:847] - __main__ - INFO - [#Stream 00 Progress]:20.0% completed
+2017-08-11 10:35:58,781 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 33, Doing 6/25 queries
+2017-08-11 10:38:58,425 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 33
+2017-08-11 10:40:29,548 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 33
+2017-08-11 10:49:30,113 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 33, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 10:49:30]
+2017-08-11 10:49:30,267 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 33, Start Time: 2017-08-11 10:40:29.548973, End Time: 2017-08-11 10:49:30.114123, Duration: 0:09:00.565150, sec: 540, Compile Time: 89 State: FAIL, ReturnRows: 73
+2017-08-11 10:49:30,268 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 10, Doing 7/25 queries
+2017-08-11 11:04:57,077 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 10
+2017-08-11 11:12:36,604 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 10
+2017-08-11 11:46:37,127 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 10, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 11:46:37]
+2017-08-11 11:46:37,284 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 10, Start Time: 2017-08-11 11:12:36.604823, End Time: 2017-08-11 11:46:37.128012, Duration: 0:34:00.523189, sec: 2040, Compile Time: 470 State: FAIL, ReturnRows: 36
+2017-08-11 11:46:37,285 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 63, Doing 8/25 queries
+2017-08-11 11:46:41,752 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 63
+2017-08-11 11:46:44,759 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 63
+2017-08-11 11:49:57,747 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 63, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 11:49:57]
+2017-08-11 11:49:57,897 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 63, Start Time: 2017-08-11 11:46:44.760129, End Time: 2017-08-11 11:49:57.747437, Duration: 0:03:12.987308, sec: 192, Compile Time: 2 State: FAIL, ReturnRows: 22
+2017-08-11 11:49:57,898 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 98, Doing 9/25 queries
+2017-08-11 11:51:00,350 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 98
+2017-08-11 11:51:30,543 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 98
+2017-08-11 11:56:55,661 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 98, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 11:56:55]
+2017-08-11 11:56:55,909 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 98, Start Time: 2017-08-11 11:51:30.543826, End Time: 2017-08-11 11:56:55.662075, Duration: 0:05:25.118249, sec: 325, Compile Time: 32 State: FAIL, ReturnRows: 19
+2017-08-11 11:56:55,912 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 67, Doing 10/25 queries
+2017-08-11 11:57:00,899 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 67
+2017-08-11 11:57:03,906 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 67
+2017-08-11 12:00:17,240 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 67, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 12:00:17]
+2017-08-11 12:00:17,414 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 67, Start Time: 2017-08-11 11:57:03.906977, End Time: 2017-08-11 12:00:17.241208, Duration: 0:03:13.334231, sec: 193, Compile Time: 2 State: FAIL, ReturnRows: 27
+2017-08-11 12:00:17,414 - PID:27370 - tpcds-test.py[line:847] - __main__ - INFO - [#Stream 00 Progress]:40.0% completed
+2017-08-11 12:00:17,417 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 81, Doing 11/25 queries
+2017-08-11 12:00:31,199 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 81
+2017-08-11 12:00:38,674 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 81
+2017-08-11 12:03:45,524 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 81, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 12:03:45]
+2017-08-11 12:03:45,741 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 81, Start Time: 2017-08-11 12:00:38.675363, End Time: 2017-08-11 12:03:45.524863, Duration: 0:03:06.849500, sec: 186, Compile Time: 7 State: FAIL, ReturnRows: 42
+2017-08-11 12:03:45,741 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 92, Doing 12/25 queries
+2017-08-11 12:14:59,887 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 92
+2017-08-11 12:20:11,812 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 92
+2017-08-11 12:43:49,579 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 92, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 12:43:49]
+2017-08-11 12:43:49,728 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 92, Start Time: 2017-08-11 12:20:11.812776, End Time: 2017-08-11 12:43:49.579652, Duration: 0:23:37.766876, sec: 1417, Compile Time: 346 State: FAIL, ReturnRows: 24
+2017-08-11 12:43:49,729 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 22, Doing 13/25 queries
+2017-08-11 12:43:50,650 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 22
+2017-08-11 12:43:51,794 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 22
+2017-08-11 12:46:52,917 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 22, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 12:46:52]
+2017-08-11 12:46:53,067 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 22, Start Time: 2017-08-11 12:43:51.794811, End Time: 2017-08-11 12:46:52.918217, Duration: 0:03:01.123406, sec: 181, Compile Time: 0 State: FAIL, ReturnRows: 20
+2017-08-11 12:46:53,068 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 6, Doing 14/25 queries
+2017-08-11 12:46:56,982 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 6
+2017-08-11 12:47:00,094 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 6
+2017-08-11 12:50:01,281 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 6, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 12:50:01]
+2017-08-11 12:50:01,427 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 6, Start Time: 2017-08-11 12:47:00.094343, End Time: 2017-08-11 12:50:01.281675, Duration: 0:03:01.187332, sec: 181, Compile Time: 2 State: FAIL, ReturnRows: 39
+2017-08-11 12:50:01,427 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 52, Doing 15/25 queries
+2017-08-11 12:50:03,847 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 52
+2017-08-11 12:50:05,918 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 52
+2017-08-11 12:53:07,183 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 52, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 12:53:07]
+2017-08-11 12:53:07,327 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 52, Start Time: 2017-08-11 12:50:05.918884, End Time: 2017-08-11 12:53:07.184180, Duration: 0:03:01.265296, sec: 181, Compile Time: 1 State: FAIL, ReturnRows: 17
+2017-08-11 12:53:07,327 - PID:27370 - tpcds-test.py[line:847] - __main__ - INFO - [#Stream 00 Progress]:60.0% completed
+2017-08-11 12:53:07,328 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 42, Doing 16/25 queries
+2017-08-11 12:53:09,738 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 42
+2017-08-11 12:53:11,751 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 42
+2017-08-11 12:56:13,106 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 42, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 12:56:13]
+2017-08-11 12:56:13,257 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 42, Start Time: 2017-08-11 12:53:11.751573, End Time: 2017-08-11 12:56:13.107087, Duration: 0:03:01.355514, sec: 181, Compile Time: 1 State: FAIL, ReturnRows: 17
+2017-08-11 12:56:13,259 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 41, Doing 17/25 queries
+2017-08-11 12:56:14,226 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 41
+2017-08-11 12:56:14,701 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 41
+2017-08-11 12:59:15,475 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 41, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 12:59:15]
+2017-08-11 12:59:15,631 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 41, Start Time: 2017-08-11 12:56:14.701948, End Time: 2017-08-11 12:59:15.475386, Duration: 0:03:00.773438, sec: 180, Compile Time: 0 State: FAIL, ReturnRows: 15
+2017-08-11 12:59:15,632 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 8, Doing 18/25 queries
+2017-08-11 13:00:18,081 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 8
+2017-08-11 13:00:50,288 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 8
+2017-08-11 13:03:51,182 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 8, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 13:03:51]
+2017-08-11 13:03:51,326 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 8, Start Time: 2017-08-11 13:00:50.289195, End Time: 2017-08-11 13:03:51.182571, Duration: 0:03:00.893376, sec: 180, Compile Time: 30 State: FAIL, ReturnRows: 31
+2017-08-11 13:03:51,327 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 12, Doing 19/25 queries
+2017-08-11 13:04:52,020 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 12
+2017-08-11 13:05:23,503 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 12
+2017-08-11 13:10:31,285 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 12, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 13:10:31]
+2017-08-11 13:10:31,437 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 12, Start Time: 2017-08-11 13:05:23.503999, End Time: 2017-08-11 13:10:31.285813, Duration: 0:05:07.781814, sec: 307, Compile Time: 30 State: FAIL, ReturnRows: 20
+2017-08-11 13:10:31,438 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 30, Doing 20/25 queries
+2017-08-11 13:10:41,165 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 30
+2017-08-11 13:10:46,759 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 30
+2017-08-11 13:13:53,122 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 30, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 13:13:53]
+2017-08-11 13:13:53,344 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 30, Start Time: 2017-08-11 13:10:46.759592, End Time: 2017-08-11 13:13:53.123202, Duration: 0:03:06.363610, sec: 186, Compile Time: 5 State: FAIL, ReturnRows: 41
+2017-08-11 13:13:53,344 - PID:27370 - tpcds-test.py[line:847] - __main__ - INFO - [#Stream 00 Progress]:80.0% completed
+2017-08-11 13:13:53,345 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 84, Doing 21/25 queries
+2017-08-11 13:14:01,059 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 84
+2017-08-11 13:14:04,961 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 84
+2017-08-11 13:17:05,960 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 84, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 13:17:05]
+2017-08-11 13:17:06,168 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 84, Start Time: 2017-08-11 13:14:04.962143, End Time: 2017-08-11 13:17:05.960802, Duration: 0:03:00.998659, sec: 180, Compile Time: 6 State: FAIL, ReturnRows: 25
+2017-08-11 13:17:06,169 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 55, Doing 22/25 queries
+2017-08-11 13:17:09,940 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 55
+2017-08-11 13:17:12,322 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 55
+2017-08-11 13:20:13,193 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 55, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 13:20:13]
+2017-08-11 13:20:13,404 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 55, Start Time: 2017-08-11 13:17:12.323007, End Time: 2017-08-11 13:20:13.193433, Duration: 0:03:00.870426, sec: 180, Compile Time: 1 State: FAIL, ReturnRows: 17
+2017-08-11 13:20:13,404 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 53, Doing 23/25 queries
+2017-08-11 13:20:19,483 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 53
+2017-08-11 13:20:23,698 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 53
+2017-08-11 13:23:40,137 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 53, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 13:23:40]
+2017-08-11 13:23:40,333 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 53, Start Time: 2017-08-11 13:20:23.698892, End Time: 2017-08-11 13:23:40.137627, Duration: 0:03:16.438735, sec: 196, Compile Time: 3 State: FAIL, ReturnRows: 22
+2017-08-11 13:23:40,334 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 83, Doing 24/25 queries
+2017-08-11 13:23:53,663 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 83
+2017-08-11 13:24:01,621 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 83
+2017-08-11 13:27:11,227 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 83, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 13:27:11]
+2017-08-11 13:27:11,441 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 83, Start Time: 2017-08-11 13:24:01.621342, End Time: 2017-08-11 13:27:11.228075, Duration: 0:03:09.606733, sec: 189, Compile Time: 7 State: FAIL, ReturnRows: 61
+2017-08-11 13:27:11,442 - PID:27370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 00] Start Query ID: 61, Doing 25/25 queries
+2017-08-11 13:29:42,060 - PID:27370 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 00] Prepare Query ID: 61
+2017-08-11 13:31:00,942 - PID:27370 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 00] Execute Query ID: 61
+2017-08-11 13:34:12,971 - PID:27370 - tpcds-test.py[line:787] - __main__ - ERROR - [Stream 00] Query ID: 61, [X020C] [Trafodion ODBC Driver][Trafodion Database] SQL ERROR:*** ERROR[2012] Server process tdm_arkesp could not be created on \NSK cpu 7 - Operating system error 4022, TPCError = 53, error detail = 0.  (See variants of Seabed procedure msg_mon_start_process for details). [2017-08-11 13:34:12]
+2017-08-11 13:34:13,131 - PID:27370 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 00] Query ID: 61, Start Time: 2017-08-11 13:31:00.942427, End Time: 2017-08-11 13:34:12.971664, Duration: 0:03:12.029237, sec: 192, Compile Time: 76 State: FAIL, ReturnRows: 51
+2017-08-11 13:34:13,131 - PID:27370 - tpcds-test.py[line:847] - __main__ - INFO - [#Stream 00 Progress]:100.0% completed
+2017-08-11 13:34:13,131 - PID:27370 - tpcds-test.py[line:868] - __main__ - INFO - [Stream 00] Exiting Stream with num_queries 25, success_percent 0.0, success_count 0, fail_count 25, skip_count 0
+2017-08-11 13:34:13,307 - PID:27351 - tpcds-test.py[line:307] - __main__ - INFO - 
+2017-08-11 13:34:13,307 - PID:27351 - tpcds-test.py[line:308] - __main__ - INFO - 
+2017-08-11 13:34:13,307 - PID:27351 - tpcds-test.py[line:309] - __main__ - INFO - Query Stream Execution Statistics Summary
+2017-08-11 13:34:13,307 - PID:27351 - tpcds-test.py[line:310] - __main__ - INFO - =====================================================================
+2017-08-11 13:34:13,308 - PID:27351 - tpcds-test.py[line:313] - __main__ - INFO - Stream ID: 00
+2017-08-11 13:34:13,308 - PID:27351 - tpcds-test.py[line:314] - __main__ - INFO - Start Time: 2017-08-11 09:23:44.800422
+2017-08-11 13:34:13,308 - PID:27351 - tpcds-test.py[line:315] - __main__ - INFO - End Time: 2017-08-11 13:34:13.132161
+2017-08-11 13:34:13,308 - PID:27351 - tpcds-test.py[line:316] - __main__ - INFO - Duration: 4:10:28.331749
+2017-08-11 13:34:13,308 - PID:27351 - tpcds-test.py[line:317] - __main__ - INFO - Total Query Count: 25
+2017-08-11 13:34:13,308 - PID:27351 - tpcds-test.py[line:318] - __main__ - INFO - Success Query Count: 0
+2017-08-11 13:34:13,308 - PID:27351 - tpcds-test.py[line:319] - __main__ - INFO - Fail Query Count: 25
+2017-08-11 13:34:13,309 - PID:27351 - tpcds-test.py[line:320] - __main__ - INFO - Skip Query Count: 0
+2017-08-11 13:34:13,309 - PID:27351 - tpcds-test.py[line:321] - __main__ - INFO - %Success Query: 0.0
+2017-08-11 13:34:13,309 - PID:27351 - tpcds-test.py[line:322] - __main__ - INFO - 
+2017-08-11 13:34:13,309 - PID:27351 - tpcds-test.py[line:285] - __main__ - INFO - Finish running streams for: query/subset_parallel/01_streams/

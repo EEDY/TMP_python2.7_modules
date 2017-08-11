@@ -1,0 +1,64 @@
+2017-08-11 11:53:25,684 - PID:15771 - tpcds-test.py[line:166] - __main__ - INFO - Start running streams for: query/subset_parallel/01_4_stream/
+2017-08-11 11:53:25,688 - PID:15771 - tpcds-test.py[line:175] - __main__ - INFO - Start a new Query Stream: query_subset_parallel_04.sql
+2017-08-11 11:53:25,689 - PID:15771 - tpcds-test.py[line:338] - __main__ - INFO - load query from file query/subset_parallel/01_4_stream/query_subset_parallel_04.sql
+2017-08-11 11:53:25,716 - PID:15793 - tpcds-test.py[line:620] - __main__ - INFO - [Stream 04] Starting Stream....
+2017-08-11 11:53:25,717 - PID:15793 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 04] Setup odbc connection
+2017-08-11 11:53:25,717 - PID:15793 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf15
+Connect using DSN=traf15;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-11 11:53:27,414 - PID:15793 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 04] 25 queries in Query list: 39,39,41,84,8,58,83,19,6,81,33,61,55,52,22,63,10,92,80,12,98,42,30,67,53
+2017-08-11 11:53:27,414 - PID:15793 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 04] Start Query ID: 39, Doing 1/25 queries
+2017-08-11 11:53:50,299 - PID:15793 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 04] Prepare Query ID: 39
+2017-08-11 11:53:52,423 - PID:15793 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 04] Execute Query ID: 39
+2017-08-11 11:57:41,246 - PID:15793 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 04] Query ID: 39, Start Time: 2017-08-11 11:53:52.423754, End Time: 2017-08-11 11:57:40.705532, Duration: 0:03:48.281778, sec: 228, Compile Time: 22 State: SUCCESS, ReturnRows: 14564
+2017-08-11 11:57:41,247 - PID:15793 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 04] Start Query ID: 39, Doing 2/25 queries
+2017-08-11 11:57:44,326 - PID:15793 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 04] Prepare Query ID: 39
+2017-08-11 11:57:46,468 - PID:15793 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 04] Execute Query ID: 39
+2017-08-11 12:00:46,587 - PID:15793 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 04] Query ID: 39, Start Time: 2017-08-11 11:57:46.468578, End Time: 2017-08-11 12:00:46.011796, Duration: 0:02:59.543218, sec: 179, Compile Time: 2 State: SUCCESS, ReturnRows: 554
+2017-08-11 12:00:46,588 - PID:15793 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 04] Start Query ID: 41, Doing 3/25 queries
+2017-08-11 12:00:48,144 - PID:15793 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 04] Prepare Query ID: 41
+2017-08-11 12:00:48,785 - PID:15793 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 04] Execute Query ID: 41
+2017-08-11 12:00:58,764 - PID:15793 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 04] Query ID: 41, Start Time: 2017-08-11 12:00:48.786107, End Time: 2017-08-11 12:00:58.435820, Duration: 0:00:09.649713, sec: 9, Compile Time: 1 State: SUCCESS, ReturnRows: 100
+2017-08-11 12:00:58,765 - PID:15793 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 04] Start Query ID: 84, Doing 4/25 queries
+2017-08-11 12:03:49,187 - PID:15793 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 04] Prepare Query ID: 84
+2017-08-11 12:03:52,867 - PID:15793 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 04] Execute Query ID: 84
+2017-08-11 12:04:52,921 - PID:15793 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 04] Query ID: 84, Start Time: 2017-08-11 12:03:52.867316, End Time: 2017-08-11 12:04:52.480291, Duration: 0:00:59.612975, sec: 59, Compile Time: 168 State: SUCCESS, ReturnRows: 100
+2017-08-11 12:04:52,921 - PID:15793 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 04] Start Query ID: 8, Doing 5/25 queries
+2017-08-11 12:06:24,072 - PID:15793 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 04] Prepare Query ID: 8
+2017-08-11 12:07:02,823 - PID:15793 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 04] Execute Query ID: 8
+2017-08-11 12:10:49,688 - PID:15793 - tpcds-test.py[line:844] - __main__ - INFO - [Stream 04] Query ID: 8, Start Time: 2017-08-11 12:07:02.824296, End Time: 2017-08-11 12:10:48.620189, Duration: 0:03:45.795893, sec: 225, Compile Time: 53 State: SUCCESS, ReturnRows: 10
+2017-08-11 12:10:49,688 - PID:15793 - tpcds-test.py[line:847] - __main__ - INFO - [#Stream 04 Progress]:20.0% completed
+2017-08-11 12:10:49,689 - PID:15793 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 04] Start Query ID: 58, Doing 6/25 queries
+2017-08-11 12:16:05,509 - PID:15793 - tpcds-test.py[line:731] - __main__ - INFO - [Stream 04] Prepare Query ID: 58
+2017-08-11 12:16:11,065 - PID:15793 - tpcds-test.py[line:769] - __main__ - INFO - [Stream 04] Execute Query ID: 58
