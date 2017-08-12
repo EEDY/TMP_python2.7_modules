@@ -1,0 +1,1984 @@
+2017-08-12 02:21:32,295 - PID:14585 - tpcds-test.py[line:166] - __main__ - INFO - Start running streams for: query/subset_parallel/01_6_stream/
+2017-08-12 02:21:32,299 - PID:14585 - tpcds-test.py[line:175] - __main__ - INFO - Start a new Query Stream: query_subset_parallel_06.sql
+2017-08-12 02:21:32,299 - PID:14585 - tpcds-test.py[line:338] - __main__ - INFO - load query from file query/subset_parallel/01_6_stream/query_subset_parallel_06.sql
+2017-08-12 02:21:32,317 - PID:14603 - tpcds-test.py[line:620] - __main__ - INFO - [Stream 06] Starting Stream....
+2017-08-12 02:21:32,317 - PID:14603 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:21:32,317 - PID:14603 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:21:33,493 - PID:14603 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:21:33,493 - PID:14603 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 53, Doing 1/25 queries
+2017-08-12 02:21:39,849 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 14603 is no longer alive. It exited with value -11 while executing 53... Starting a new process to run remaining queries
+2017-08-12 02:21:39,855 - PID:14688 - tpcds-test.py[line:618] - __main__ - INFO - [Stream 06] qid-53, Unknown Failure... Will retry one more time
+2017-08-12 02:21:39,855 - PID:14688 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:21:39,856 - PID:14688 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:21:41,012 - PID:14688 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:21:41,013 - PID:14688 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 53, Doing 1/25 queries
+2017-08-12 02:21:47,344 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 14688 is no longer alive. It exited with value -11 while executing 53... Starting a new process to run remaining queries
+2017-08-12 02:21:47,351 - PID:14818 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:21:47,351 - PID:14818 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:21:48,513 - PID:14818 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:21:48,513 - PID:14818 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 58, Doing 2/25 queries
+2017-08-12 02:21:54,836 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 14818 is no longer alive. It exited with value -11 while executing 58... Starting a new process to run remaining queries
+2017-08-12 02:21:54,843 - PID:14916 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:21:54,844 - PID:14916 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:21:55,913 - PID:14916 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:21:55,913 - PID:14916 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 80, Doing 3/25 queries
+2017-08-12 02:22:02,228 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 14916 is no longer alive. It exited with value -11 while executing 80... Starting a new process to run remaining queries
+2017-08-12 02:22:02,235 - PID:15069 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:22:02,236 - PID:15069 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:22:03,372 - PID:15069 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:22:03,373 - PID:15069 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 6, Doing 4/25 queries
+2017-08-12 02:22:09,671 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 15069 is no longer alive. It exited with value -11 while executing 6... Starting a new process to run remaining queries
+2017-08-12 02:22:09,677 - PID:15370 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:22:09,678 - PID:15370 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:22:10,802 - PID:15370 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:22:10,803 - PID:15370 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 84, Doing 5/25 queries
+2017-08-12 02:22:17,115 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 15370 is no longer alive. It exited with value -11 while executing 84... Starting a new process to run remaining queries
+2017-08-12 02:22:17,122 - PID:15750 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:22:17,123 - PID:15750 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:22:18,223 - PID:15750 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:22:18,224 - PID:15750 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 42, Doing 6/25 queries
+2017-08-12 02:22:24,557 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 15750 is no longer alive. It exited with value -11 while executing 42... Starting a new process to run remaining queries
+2017-08-12 02:22:24,564 - PID:15897 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:22:24,565 - PID:15897 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:22:25,712 - PID:15897 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:22:25,713 - PID:15897 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 33, Doing 7/25 queries
+2017-08-12 02:22:32,048 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 15897 is no longer alive. It exited with value -11 while executing 33... Starting a new process to run remaining queries
+2017-08-12 02:22:32,057 - PID:16003 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:22:32,057 - PID:16003 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:22:33,222 - PID:16003 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:22:33,223 - PID:16003 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 8, Doing 8/25 queries
+2017-08-12 02:22:39,541 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 16003 is no longer alive. It exited with value -11 while executing 8... Starting a new process to run remaining queries
+2017-08-12 02:22:39,548 - PID:16935 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:22:39,548 - PID:16935 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:22:40,682 - PID:16935 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:22:40,683 - PID:16935 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 19, Doing 9/25 queries
+2017-08-12 02:22:46,984 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 16935 is no longer alive. It exited with value -11 while executing 19... Starting a new process to run remaining queries
+2017-08-12 02:22:46,991 - PID:17045 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:22:46,991 - PID:17045 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:22:48,103 - PID:17045 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:22:48,104 - PID:17045 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 61, Doing 10/25 queries
+2017-08-12 02:22:54,428 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 17045 is no longer alive. It exited with value -11 while executing 61... Starting a new process to run remaining queries
+2017-08-12 02:22:54,436 - PID:17136 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:22:54,436 - PID:17136 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:22:55,573 - PID:17136 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:22:55,574 - PID:17136 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 41, Doing 11/25 queries
+2017-08-12 02:23:01,871 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 17136 is no longer alive. It exited with value -11 while executing 41... Starting a new process to run remaining queries
+2017-08-12 02:23:01,878 - PID:17268 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:23:01,878 - PID:17268 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:23:03,013 - PID:17268 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:23:03,014 - PID:17268 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 67, Doing 12/25 queries
+2017-08-12 02:23:09,313 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 17268 is no longer alive. It exited with value -11 while executing 67... Starting a new process to run remaining queries
+2017-08-12 02:23:09,320 - PID:17519 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:23:09,320 - PID:17519 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:23:10,403 - PID:17519 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:23:10,404 - PID:17519 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 98, Doing 13/25 queries
+2017-08-12 02:23:16,707 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 17519 is no longer alive. It exited with value -11 while executing 98... Starting a new process to run remaining queries
+2017-08-12 02:23:16,715 - PID:17622 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:23:16,715 - PID:17622 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:23:17,863 - PID:17622 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:23:17,864 - PID:17622 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 22, Doing 14/25 queries
+2017-08-12 02:23:24,151 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 17622 is no longer alive. It exited with value -11 while executing 22... Starting a new process to run remaining queries
+2017-08-12 02:23:24,157 - PID:17707 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:23:24,157 - PID:17707 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:23:25,292 - PID:17707 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:23:25,294 - PID:17707 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 10, Doing 15/25 queries
+2017-08-12 02:23:31,595 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 17707 is no longer alive. It exited with value -11 while executing 10... Starting a new process to run remaining queries
+2017-08-12 02:23:31,602 - PID:19323 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:23:31,602 - PID:19323 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:23:32,742 - PID:19323 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:23:32,744 - PID:19323 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 83, Doing 16/25 queries
+2017-08-12 02:23:39,041 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 19323 is no longer alive. It exited with value -11 while executing 83... Starting a new process to run remaining queries
+2017-08-12 02:23:39,049 - PID:20391 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:23:39,050 - PID:20391 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:23:40,172 - PID:20391 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:23:40,174 - PID:20391 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 63, Doing 17/25 queries
+2017-08-12 02:23:46,485 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 20391 is no longer alive. It exited with value -11 while executing 63... Starting a new process to run remaining queries
+2017-08-12 02:23:46,493 - PID:20503 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:23:46,494 - PID:20503 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:23:47,662 - PID:20503 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:23:47,664 - PID:20503 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 92, Doing 18/25 queries
+2017-08-12 02:23:53,980 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 20503 is no longer alive. It exited with value -11 while executing 92... Starting a new process to run remaining queries
+2017-08-12 02:23:53,987 - PID:20672 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:23:53,987 - PID:20672 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:23:55,153 - PID:20672 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:23:55,154 - PID:20672 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 12, Doing 19/25 queries
+2017-08-12 02:24:01,423 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 20672 is no longer alive. It exited with value -11 while executing 12... Starting a new process to run remaining queries
+2017-08-12 02:24:01,430 - PID:20837 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:24:01,430 - PID:20837 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:24:02,562 - PID:20837 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:24:02,564 - PID:20837 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 39, Doing 20/25 queries
+2017-08-12 02:24:08,870 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 20837 is no longer alive. It exited with value -11 while executing 39... Starting a new process to run remaining queries
+2017-08-12 02:24:08,877 - PID:21109 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:24:08,878 - PID:21109 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:24:10,043 - PID:21109 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:24:10,044 - PID:21109 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 39, Doing 20/25 queries
+2017-08-12 02:24:16,367 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 21109 is no longer alive. It exited with value -11 while executing 39... Starting a new process to run remaining queries
+2017-08-12 02:24:16,374 - PID:21334 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:24:16,375 - PID:21334 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:24:17,522 - PID:21334 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:24:17,525 - PID:21334 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 30, Doing 22/25 queries
+2017-08-12 02:24:23,818 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 21334 is no longer alive. It exited with value -11 while executing 30... Starting a new process to run remaining queries
+2017-08-12 02:24:23,825 - PID:21413 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:24:23,825 - PID:21413 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:24:24,933 - PID:21413 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:24:24,935 - PID:21413 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 81, Doing 23/25 queries
+2017-08-12 02:24:31,215 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 21413 is no longer alive. It exited with value -11 while executing 81... Starting a new process to run remaining queries
+2017-08-12 02:24:31,223 - PID:21580 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:24:31,223 - PID:21580 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:24:32,382 - PID:21580 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:24:32,385 - PID:21580 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 52, Doing 24/25 queries
+2017-08-12 02:24:38,659 - PID:14585 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 21580 is no longer alive. It exited with value -11 while executing 52... Starting a new process to run remaining queries
+2017-08-12 02:24:38,666 - PID:21660 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 02:24:38,667 - PID:21660 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 02:24:39,823 - PID:21660 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 02:24:39,825 - PID:21660 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 55, Doing 25/25 queries
+2017-08-12 05:41:21,079 - PID:26689 - tpcds-test.py[line:166] - __main__ - INFO - Start running streams for: query/subset_parallel/01_6_stream/
+2017-08-12 05:41:21,110 - PID:26689 - tpcds-test.py[line:175] - __main__ - INFO - Start a new Query Stream: query_subset_parallel_06.sql
+2017-08-12 05:41:21,111 - PID:26689 - tpcds-test.py[line:338] - __main__ - INFO - load query from file query/subset_parallel/01_6_stream/query_subset_parallel_06.sql
+2017-08-12 05:41:21,210 - PID:28415 - tpcds-test.py[line:620] - __main__ - INFO - [Stream 06] Starting Stream....
+2017-08-12 05:41:21,210 - PID:28415 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:41:21,210 - PID:28415 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:41:22,372 - PID:28415 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:41:22,373 - PID:28415 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 53, Doing 1/25 queries
+2017-08-12 05:41:28,846 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 28415 is no longer alive. It exited with value -11 while executing 53... Starting a new process to run remaining queries
+2017-08-12 05:41:28,870 - PID:5037 - tpcds-test.py[line:618] - __main__ - INFO - [Stream 06] qid-53, Unknown Failure... Will retry one more time
+2017-08-12 05:41:28,870 - PID:5037 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:41:28,871 - PID:5037 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:41:29,984 - PID:5037 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:41:29,984 - PID:5037 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 53, Doing 1/25 queries
+2017-08-12 05:41:36,394 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 5037 is no longer alive. It exited with value -11 while executing 53... Starting a new process to run remaining queries
+2017-08-12 05:41:36,418 - PID:12884 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:41:36,419 - PID:12884 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:41:37,493 - PID:12884 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:41:37,493 - PID:12884 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 58, Doing 2/25 queries
+2017-08-12 05:41:43,825 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 12884 is no longer alive. It exited with value -11 while executing 58... Starting a new process to run remaining queries
+2017-08-12 05:41:43,849 - PID:20469 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:41:43,849 - PID:20469 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:41:44,971 - PID:20469 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:41:44,972 - PID:20469 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 80, Doing 3/25 queries
+2017-08-12 05:41:51,305 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 20469 is no longer alive. It exited with value -11 while executing 80... Starting a new process to run remaining queries
+2017-08-12 05:41:51,336 - PID:28715 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:41:51,337 - PID:28715 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:41:52,423 - PID:28715 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:41:52,424 - PID:28715 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 6, Doing 4/25 queries
+2017-08-12 05:41:58,737 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 28715 is no longer alive. It exited with value -11 while executing 6... Starting a new process to run remaining queries
+2017-08-12 05:41:58,782 - PID:3850 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:41:58,782 - PID:3850 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:41:59,881 - PID:3850 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:41:59,882 - PID:3850 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 84, Doing 5/25 queries
+2017-08-12 05:42:06,216 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 3850 is no longer alive. It exited with value -11 while executing 84... Starting a new process to run remaining queries
+2017-08-12 05:42:06,250 - PID:11469 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:42:06,251 - PID:11469 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:42:07,341 - PID:11469 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:42:07,342 - PID:11469 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 42, Doing 6/25 queries
+2017-08-12 05:42:13,641 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 11469 is no longer alive. It exited with value -11 while executing 42... Starting a new process to run remaining queries
+2017-08-12 05:42:13,671 - PID:18952 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:42:13,672 - PID:18952 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:42:14,782 - PID:18952 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:42:14,783 - PID:18952 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 33, Doing 7/25 queries
+2017-08-12 05:42:21,119 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 18952 is no longer alive. It exited with value -11 while executing 33... Starting a new process to run remaining queries
+2017-08-12 05:42:21,146 - PID:26826 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:42:21,146 - PID:26826 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:42:22,242 - PID:26826 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:42:22,243 - PID:26826 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 8, Doing 8/25 queries
+2017-08-12 05:42:28,600 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 26826 is no longer alive. It exited with value -11 while executing 8... Starting a new process to run remaining queries
+2017-08-12 05:42:28,629 - PID:2283 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:42:28,629 - PID:2283 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:42:29,752 - PID:2283 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:42:29,753 - PID:2283 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 19, Doing 9/25 queries
+2017-08-12 05:42:36,074 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 2283 is no longer alive. It exited with value -11 while executing 19... Starting a new process to run remaining queries
+2017-08-12 05:42:36,105 - PID:9741 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:42:36,105 - PID:9741 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:42:37,213 - PID:9741 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:42:37,214 - PID:9741 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 61, Doing 10/25 queries
+2017-08-12 05:42:43,502 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 9741 is no longer alive. It exited with value -11 while executing 61... Starting a new process to run remaining queries
+2017-08-12 05:42:43,534 - PID:17021 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:42:43,534 - PID:17021 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:42:44,611 - PID:17021 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:42:44,613 - PID:17021 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 41, Doing 11/25 queries
+2017-08-12 05:42:50,933 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 17021 is no longer alive. It exited with value -11 while executing 41... Starting a new process to run remaining queries
+2017-08-12 05:42:50,965 - PID:24574 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:42:50,965 - PID:24574 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:42:52,061 - PID:24574 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:42:52,062 - PID:24574 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 67, Doing 12/25 queries
+2017-08-12 05:42:58,386 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 24574 is no longer alive. It exited with value -11 while executing 67... Starting a new process to run remaining queries
+2017-08-12 05:42:58,418 - PID:32330 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:42:58,418 - PID:32330 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:42:59,511 - PID:32330 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:42:59,515 - PID:32330 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 98, Doing 13/25 queries
+2017-08-12 05:43:05,831 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 32330 is no longer alive. It exited with value -11 while executing 98... Starting a new process to run remaining queries
+2017-08-12 05:43:05,865 - PID:6889 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:43:05,866 - PID:6889 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:43:06,963 - PID:6889 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:43:06,964 - PID:6889 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 22, Doing 14/25 queries
+2017-08-12 05:43:13,267 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 6889 is no longer alive. It exited with value -11 while executing 22... Starting a new process to run remaining queries
+2017-08-12 05:43:13,292 - PID:14476 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:43:13,292 - PID:14476 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:43:14,372 - PID:14476 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:43:14,375 - PID:14476 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 10, Doing 15/25 queries
+2017-08-12 05:43:20,740 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 14476 is no longer alive. It exited with value -11 while executing 10... Starting a new process to run remaining queries
+2017-08-12 05:43:20,775 - PID:22266 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:43:20,775 - PID:22266 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:43:21,881 - PID:22266 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:43:21,882 - PID:22266 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 83, Doing 16/25 queries
+2017-08-12 05:43:28,222 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 22266 is no longer alive. It exited with value -11 while executing 83... Starting a new process to run remaining queries
+2017-08-12 05:43:28,261 - PID:29929 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:43:28,261 - PID:29929 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:43:29,351 - PID:29929 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:43:29,352 - PID:29929 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 63, Doing 17/25 queries
+2017-08-12 05:43:35,706 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 29929 is no longer alive. It exited with value -11 while executing 63... Starting a new process to run remaining queries
+2017-08-12 05:43:35,737 - PID:4957 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:43:35,737 - PID:4957 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:43:36,842 - PID:4957 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:43:36,843 - PID:4957 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 92, Doing 18/25 queries
+2017-08-12 05:43:43,245 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 4957 is no longer alive. It exited with value -11 while executing 92... Starting a new process to run remaining queries
+2017-08-12 05:43:43,269 - PID:12826 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:43:43,269 - PID:12826 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:43:44,362 - PID:12826 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:43:44,363 - PID:12826 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 12, Doing 19/25 queries
+2017-08-12 05:43:50,689 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 12826 is no longer alive. It exited with value -11 while executing 12... Starting a new process to run remaining queries
+2017-08-12 05:43:50,719 - PID:20413 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:43:50,719 - PID:20413 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:43:51,801 - PID:20413 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:43:51,803 - PID:20413 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 39, Doing 20/25 queries
+2017-08-12 05:43:58,111 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 20413 is no longer alive. It exited with value -11 while executing 39... Starting a new process to run remaining queries
+2017-08-12 05:43:58,140 - PID:28270 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:43:58,140 - PID:28270 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:43:59,231 - PID:28270 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:43:59,232 - PID:28270 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 39, Doing 20/25 queries
+2017-08-12 05:44:05,560 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 28270 is no longer alive. It exited with value -11 while executing 39... Starting a new process to run remaining queries
+2017-08-12 05:44:05,594 - PID:3229 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:44:05,594 - PID:3229 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:44:06,691 - PID:3229 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:44:06,693 - PID:3229 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 30, Doing 22/25 queries
+2017-08-12 05:44:13,045 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 3229 is no longer alive. It exited with value -11 while executing 30... Starting a new process to run remaining queries
+2017-08-12 05:44:13,079 - PID:10421 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:44:13,079 - PID:10421 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:44:14,173 - PID:10421 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:44:14,176 - PID:10421 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 81, Doing 23/25 queries
+2017-08-12 05:44:20,492 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 10421 is no longer alive. It exited with value -11 while executing 81... Starting a new process to run remaining queries
+2017-08-12 05:44:20,533 - PID:18105 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:44:20,533 - PID:18105 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:44:21,632 - PID:18105 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:44:21,633 - PID:18105 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 52, Doing 24/25 queries
+2017-08-12 05:44:27,968 - PID:26689 - tpcds-test.py[line:231] - __main__ - WARNING - [Stream 06] process: 18105 is no longer alive. It exited with value -11 while executing 52... Starting a new process to run remaining queries
+2017-08-12 05:44:27,990 - PID:26073 - tpcds-test.py[line:625] - __main__ - INFO - [Stream 06] Setup odbc connection
+2017-08-12 05:44:27,991 - PID:26073 - tpcds-test.py[line:382] - __main__ - INFO - EEDY connection to DSN:traf20
+Connect using DSN=traf20;UID=sentry_user2;PWD=traf123, autocommit = None, timeout=0
+Connect finished
+[DEBUG] execute query: set schema hive.tpcds_sf1k_t3;
+[DEBUG] execute query: CQD comp_bool_158 'on';
+[DEBUG] execute query: CQD orc_read_stripe_info 'on';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD HIVE_NUM_ESPS_PER_DATANODE '9';
+[DEBUG] execute query: CQD query_cache '200000';
+[DEBUG] execute query: CQD HIVE_METADATA_REFRESH_INTERVAL '-1';
+[DEBUG] execute query: CQD metadata_cache_size '200';
+[DEBUG] execute query: CQD partitioning_scheme_sharing '2';
+[DEBUG] execute query: CQD orc_njs 'on';
+[DEBUG] execute query: CQD nested_joins 'on';
+[DEBUG] execute query: CQD GEN_HSHJ_MIN_MAX_OPT 'on';
+[DEBUG] execute query: CQD merge_joins 'off';
+[DEBUG] execute query: CQD comp_bool_208 'on';
+[DEBUG] execute query: CQD group_or_order_by_expr 'ON';
+[DEBUG] execute query: CQD hive_data_mod_check 'off';
+[DEBUG] execute query: CQD COMP_BOOL_221 'ON';
+[DEBUG] execute query: CQD SCRATCH_DIRS '/mnt/diskb/tpcds_data:/mnt/diskc/tpcds_data:/mnt/diskd/tpcds_data:/mnt/diske/tpcds_data:/mnt/diskf/tpcds_data';
+[DEBUG] execute query: CQD ORC_NJS_PROBES_THRESHOLD '300';
+[DEBUG] execute query: CQD disable_read_only 'on';
+[DEBUG] execute query: CQD NCM_MP_ORC_SCAN_COST_ADJ_FACTOR '1000';
+[DEBUG] execute query: CQD MEMORY_USAGE_SAFETY_NET '1525';
+[DEBUG] execute query: CQD FIRSTN_PREDICATE_SAFETY_FACTOR '120';
+[DEBUG] execute query: CQD subquery_unnesting_early_group 'on';
+[DEBUG] execute query: CQD INTERSECT_PUSH_GRBY_RATIO '0.0' ;
+[DEBUG] execute query: CQD MJ_COMPUTE_CPU_RESOURCE '1';
+[DEBUG] execute query: CQD HIVE_SCAN_RESOURCES_INCLUSION 'OFF';
+[DEBUG] execute query: CQD PRIV_SENTRY_RECHECK_INTERVAL '3600';
+[DEBUG] execute query: CQD DOP_ADJUST '0';
+[DEBUG] execute query: CQD DOP_ADJUST_WORK_UNIT '233554432';
+[DEBUG] execute query: CQD HIVE_STATS_CACHING 'ON';
+2017-08-12 05:44:29,086 - PID:26073 - tpcds-test.py[line:668] - __main__ - INFO - [Stream 06] 25 queries in Query list: 53,58,80,6,84,42,33,8,19,61,41,67,98,22,10,83,63,92,12,39,39,30,81,52,55
+2017-08-12 05:44:29,088 - PID:26073 - tpcds-test.py[line:686] - __main__ - INFO - [Stream 06] Start Query ID: 55, Doing 25/25 queries
